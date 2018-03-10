@@ -7,6 +7,7 @@
 using namespace Socket;
 using namespace std;
 
+typedef Socket::Socket Sock;
 SocketAddress::SocketAddress(){
 
 }
@@ -23,5 +24,24 @@ SocketAddress::SocketAddress(const AddressFamilyType & __domain, const uint64_t 
 }
 
 SocketAddress::~SocketAddress(){
+
+}
+char * SocketAddress::getHostAddr(){
+
+}
+
+inline uint16_t SocketAddress::getPort() const {
+
+}
+
+inline size_t SocketAddress::getSockSize() const{
+
+}
+
+inline struct sockaddr_in *  SocketAddress::getSockAddrIn(){
+
+}
+
+Sock::Socket(){
 
 }
